@@ -22,8 +22,6 @@
 
 Redis client(support redis portocal) based on ioredis for egg framework
 
-# This project is still working in progress
-
 ## Install
 
 ```bash
