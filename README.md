@@ -53,8 +53,7 @@ In controller, you can use `app.redis` to get the redis instance, check [ioredis
 // app/controller/home.js
 
 module.exports = app => {
-  return class HomeController
-  extends app.Controller {
+  return class HomeController extends app.Controller {
     * index() {
       const { ctx, app } = this;
       // set
@@ -74,8 +73,7 @@ If your Configure with multi clients, you can use `app.redis.get(instanceName)` 
 // app/controller/home.js
 
 module.exports = app => {
-  return class HomeController
-  extends app.Controller {
+  return class HomeController extends app.Controller {
     * index() {
       const { ctx, app } = this;
       // set
