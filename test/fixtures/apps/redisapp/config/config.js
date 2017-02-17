@@ -9,3 +9,5 @@ exports.redis = {
   },
   agent:true
 };
+
+exports.keys = 'keys';

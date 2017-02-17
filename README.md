@@ -45,6 +45,46 @@ exports.redis = {
 
 Configure redis information in `${app_root}/config/config.default.js`:
 
+## Usage
+
+In controller, you can use `app.redis` to get the redis instance, check [ioredis](https://github.com/luin/ioredis#basic-usage) to see how to use.
+
+```js
+// app/controller/home.js
+
+module.exports = app => {
+  return class HomeController extends app.Controller {
+    * index() {
+      const { ctx, app } = this;
+      // set
+      yield app.redis.set('foo', 'bar');
+      // get
+      ctx.body = yield app.redis.get('foo');
+    }
+  };
+};
+```
+
+### Multi Clients
+
+If your Configure with multi clients, you can use `app.redis.get(instanceName)` to get the specific redis instance and use it like above.
+
+```js
+// app/controller/home.js
+
+module.exports = app => {
+  return class HomeController extends app.Controller {
+    * index() {
+      const { ctx, app } = this;
+      // set
+      yield app.redis.get('instance1').set('foo', 'bar');
+      // get
+      ctx.body = yield app.redis..get('instance1').get('foo');
+    }
+  };
+};
+```
+
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/eggjs/egg/issues).
