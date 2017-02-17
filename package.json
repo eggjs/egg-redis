@@ -1,0 +1,52 @@
+{
+  "name": "egg-redis",
+  "version": "0.0.2",
+  "description": "Redis plugin for egg",
+  "eggPlugin": {
+    "name": "redis"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "redis",
+    "database"
+  ],
+  "dependencies": {
+    "ioredis": "^2.5.0"
+  },
+  "devDependencies": {
+    "autod": "^2.7.1",
+    "egg": "^0.9.0",
+    "egg-bin": "^2.0.2",
+    "egg-mock": "^2.3.1",
+    "eslint": "^3.14.1",
+    "eslint-config-egg": "^3.2.0",
+    "supertest": "^3.0.0",
+    "utility": "^1.9.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "6, 7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-redis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-redis#readme",
+  "author": "jtyjty99999",
+  "license": "MIT"
+}
