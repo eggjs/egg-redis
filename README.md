@@ -85,6 +85,52 @@ module.exports = app => {
 };
 ```
 
+
+### Clients Depend on Redis Cluster
+
+Before you start to use Redis Cluster, please checkout the [document](https://redis.io/topics/cluster-tutorial) first, especially confirm `cluster-enabled yes` in Redis Cluster configuration file.
+
+In controller, you also can use `app.redis` to get the redis instance based on Redis Cluster.
+
+```js
+
+// app/config/config.default.js
+
+exports.redis = {
+   client: {
+     cluster: true,
+     nodes: [{
+       host: '127.0.0.1',
+       port: '6379',
+       family: 'user',
+       password: 'password',
+       db: 'db',
+     }, {
+       host: '127.0.0.1',
+       port: '6380',
+       family: 'user',
+       password: 'password',
+       db: 'db',
+     }]
+   },
+};
+
+// app/controller/home.js
+
+module.exports = app => {
+  return class HomeController extends app.Controller {
+    * index() {
+      const { ctx, app } = this;
+      // set
+      yield app.redis.set('foo', 'bar');
+      // get
+      ctx.body = yield app.redis.get('foo');
+    }
+  };
+};
+```
+
+
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/eggjs/egg/issues).

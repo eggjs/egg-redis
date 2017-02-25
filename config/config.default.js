@@ -16,9 +16,9 @@ exports.redis = {
   // },
 
   // Cluster Redis
-  // client: [
+  // client: {
   //   cluster: true,
-  //   nodes: {
+  //   nodes: [{
   //     host: 'host',
   //     port: 'port',
   //     family: 'user',
@@ -30,7 +30,7 @@ exports.redis = {
   //   family: 'user',
   //   password: 'password',
   //   db: 'db',
-  // }],
+  // }]},
 
   // Multi Redis
   // clients: {
