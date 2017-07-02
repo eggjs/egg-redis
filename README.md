@@ -45,6 +45,42 @@ exports.redis = {
 
 Configure redis information in `${app_root}/config/config.default.js`:
 
+**Single Client**
+
+```javascript
+config.redis = {
+  client: {
+    port: 6379,          // Redis port
+    host: '127.0.0.1',   // Redis host
+    password: 'auth',
+    db: 0,
+  },
+}
+```
+
+**Multi Clients**
+
+```javascript
+config.redis = {
+  clients: {
+    foo: {                 // instanceName. See below
+      port: 6379,          // Redis port
+      host: '127.0.0.1',   // Redis host
+      password: 'auth',
+      db: 0,
+    },
+    bar: {
+      port: 6379,
+      host: '127.0.0.1',
+      password: 'auth',
+      db: 1,
+    },
+  }
+}
+```
+
+See [ioredis API Documentation](https://github.com/luin/ioredis/blob/master/API.md#new_Redis) for all available options.
+
 ## Usage
 
 In controller, you can use `app.redis` to get the redis instance, check [ioredis](https://github.com/luin/ioredis#basic-usage) to see how to use.
