@@ -79,6 +79,25 @@ config.redis = {
 }
 ```
 
+**No password**
+
+Redis support no authentication access, but we are highly recommand you to use redis `requirepass` in `redis.conf`.
+
+```bash
+
+$vim /etc/redis/redis.conf  
+
+requirepass xxxxxxxxxx  // xxxxxxxxxx是你的密码
+
+```
+
+Because it may be cause security risk, refer:
+
+- https://ruby-china.org/topics/28094
+- https://zhuoroger.github.io/2016/07/29/redis-sec/
+
+If you want to access redis with no password, use `password: null`.
+
 See [ioredis API Documentation](https://github.com/luin/ioredis/blob/master/API.md#new_Redis) for all available options.
 
 ## Usage
