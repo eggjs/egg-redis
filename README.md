@@ -134,7 +134,7 @@ module.exports = app => {
       // set
       yield app.redis.get('instance1').set('foo', 'bar');
       // get
-      ctx.body = yield app.redis..get('instance1').get('foo');
+      ctx.body = yield app.redis.get('instance1').get('foo');
     }
   };
 };
