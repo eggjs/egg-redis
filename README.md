@@ -109,12 +109,12 @@ In controller, you can use `app.redis` to get the redis instance, check [ioredis
 
 module.exports = app => {
   return class HomeController extends app.Controller {
-    * index() {
+    async index() {
       const { ctx, app } = this;
       // set
-      yield app.redis.set('foo', 'bar');
+      await app.redis.set('foo', 'bar');
       // get
-      ctx.body = yield app.redis.get('foo');
+      ctx.body = await app.redis.get('foo');
     }
   };
 };
@@ -129,12 +129,12 @@ If your Configure with multi clients, you can use `app.redis.get(instanceName)` 
 
 module.exports = app => {
   return class HomeController extends app.Controller {
-    * index() {
+    async index() {
       const { ctx, app } = this;
       // set
-      yield app.redis.get('instance1').set('foo', 'bar');
+      await app.redis.get('instance1').set('foo', 'bar');
       // get
-      ctx.body = yield app.redis.get('instance1').get('foo');
+      ctx.body = await app.redis.get('instance1').get('foo');
     }
   };
 };
@@ -174,12 +174,12 @@ exports.redis = {
 
 module.exports = app => {
   return class HomeController extends app.Controller {
-    * index() {
+    async index() {
       const { ctx, app } = this;
       // set
-      yield app.redis.set('foo', 'bar');
+      await app.redis.set('foo', 'bar');
       // get
-      ctx.body = yield app.redis.get('foo');
+      ctx.body = await app.redis.get('foo');
     }
   };
 };
