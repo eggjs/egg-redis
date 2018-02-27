@@ -5,6 +5,12 @@
   "eggPlugin": {
     "name": "redis"
   },
+  "files": [
+    "app.js",
+    "agent.js",
+    "lib",
+    "config"
+  ],
   "keywords": [
     "egg",
     "eggPlugin",
