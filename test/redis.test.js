@@ -18,9 +18,9 @@ describe('test/redis.test.js', () => {
 
     it('should query', () => {
       return request(app.callback())
-      .get('/')
-      .expect(200)
-      .expect('bar');
+        .get('/')
+        .expect(200)
+        .expect('bar');
     });
 
   });
