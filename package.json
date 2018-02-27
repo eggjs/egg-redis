@@ -16,13 +16,13 @@
     "ioredis": "^3.2.2"
   },
   "devDependencies": {
-    "autod": "^2.7.1",
-    "egg": "^1.0.0-rc.2",
-    "egg-bin": "^2.2.3",
-    "egg-ci": "^1.3.0",
-    "egg-mock": "^3.0.1",
-    "eslint": "^3.16.1",
-    "eslint-config-egg": "^3.2.0",
+    "autod": "^3.0.1",
+    "egg": "^2.3.0",
+    "egg-bin": "^4.4.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.14.0",
+    "eslint": "^4.18.1",
+    "eslint-config-egg": "^7.0.0",
     "supertest": "^3.0.0",
     "utility": "^1.9.0"
   },
@@ -39,7 +39,7 @@
   },
   "ci": {
     "type": "travis",
-    "version": "6, 7",
+    "version": "8, 9",
     "license": true,
     "services": "redis-server"
   },
