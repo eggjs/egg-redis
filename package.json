@@ -5,9 +5,11 @@
   "eggPlugin": {
     "name": "redis"
   },
+  "types": "./index.d.ts",
   "files": [
     "app.js",
     "agent.js",
+    "index.d.ts",
     "lib",
     "config"
   ],
