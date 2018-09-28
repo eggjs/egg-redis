@@ -5,9 +5,11 @@
   "eggPlugin": {
     "name": "redis"
   },
+  "types": "./index.d.ts",
   "files": [
     "app.js",
     "agent.js",
+    "index.d.ts",
     "lib",
     "config"
   ],
@@ -19,6 +21,7 @@
     "database"
   ],
   "dependencies": {
+    "@types/ioredis": "^4.0.1",
     "ioredis": "^3.2.2"
   },
   "devDependencies": {
