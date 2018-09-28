@@ -6,7 +6,7 @@ interface RedisOpts extends RedisOptions {
 
 interface ClusterOptions extends RedisOpts {
     cluster?: boolean;
-    nodes?: Redis[];
+    nodes?: RedisOpts[];
 }
 
 interface EggRedisOptions {
