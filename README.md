@@ -139,7 +139,46 @@ module.exports = app => {
   };
 };
 ```
+### Clinets Depend on Sentinels
 
+Before you start to use Redis Sentinel, please checkout the [document](https://redis.io/topics/sentinel) first.
+
+In controller, you also can use `app.redis` to get the redis instance Monitored by Redis Sentinel.
+
+```js
+
+// app/config/config.default.js
+
+exports.redis = {
+   client: {
+    sentinels: [
+      {
+        host: '127.0.0.1',
+        port: 26379
+      },
+      {
+        host: '127.0.0.1',
+        port: 26380
+      }
+    ],
+    name: 'mymaster'
+   },
+};
+
+// app/controller/home.js
+
+module.exports = app => {
+  return class HomeController extends app.Controller {
+    async index() {
+      const { ctx, app } = this;
+      // set
+      await app.redis.set('foo', 'bar');
+      // get
+      ctx.body = await app.redis.get('foo');
+    }
+  };
+};
+```
 
 ### Clients Depend on Redis Cluster
 

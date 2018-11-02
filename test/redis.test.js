@@ -24,4 +24,24 @@ describe('test/redis.test.js', () => {
     });
 
   });
+
+  describe('sentinel mode', () => {
+    let app;
+    before(function* () {
+      app = mm.app({
+        baseDir: 'apps/redissentinelapp',
+      });
+      yield app.ready();
+    });
+    after(() => app.close());
+    afterEach(mm.restore);
+
+    it('should query', () => {
+      return request(app.callback())
+        .get('/')
+        .expect(200)
+        .expect('bar');
+    });
+
+  });
 });
