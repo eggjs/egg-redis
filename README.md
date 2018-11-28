@@ -87,7 +87,7 @@ Redis support no authentication access, but we are highly recommand you to use r
 
 $vim /etc/redis/redis.conf
 
-requirepass xxxxxxxxxx  // xxxxxxxxxx是你的密码
+requirepass xxxxxxxxxx  // xxxxxxxxxx is your password
 
 ```
 
