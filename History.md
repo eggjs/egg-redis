@@ -1,4 +1,10 @@
 
+2.1.0 / 2018-11-28
+==================
+
+**features**
+  * [[`ee3fda1`](http://github.com/eggjs/egg-redis/commit/ee3fda1f95a178a6120fe32141c903d19f7f5ecb)] - feat: support customize ioredis version (#21) (Yiyu He <<dead_horse@qq.com>>)
+
 2.0.1 / 2018-11-28
 ==================
 
