@@ -8,12 +8,7 @@ exports.redis = {
     db: '0',
   },
   agent:true,
-};
-
-exports.logger = {
-  coreLogger: {
-    level: 'INFO',
-  },
+  supportTimeCommand: false,
 };
 
 exports.keys = 'keys';
