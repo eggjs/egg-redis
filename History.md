@@ -1,4 +1,10 @@
 
+2.0.1 / 2018-11-28
+==================
+
+**fixes**
+  * [[`fbfbbfa`](http://github.com/eggjs/egg-redis/commit/fbfbbfabe4650a529f2d2d46983e1b05df1fb347)] - fix: show real redis server time by TIME command (#20) (fengmk2 <<fengmk2@gmail.com>>)
+
 2.0.0 / 2018-02-27
 ==================
 
