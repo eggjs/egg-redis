@@ -9,6 +9,7 @@ exports.redis = {
   // if your redis server not support TIME command, please set this config to false
   // see https://redis.io/commands/time
   supportTimeCommand: true,
+  //  Redis: require('ioredis'), // customize ioredis version, only set when you needed
 
   // Single Redis
   // client: {

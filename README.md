@@ -85,7 +85,7 @@ Redis support no authentication access, but we are highly recommand you to use r
 
 ```bash
 
-$vim /etc/redis/redis.conf  
+$vim /etc/redis/redis.conf
 
 requirepass xxxxxxxxxx  // xxxxxxxxxx是你的密码
 
@@ -99,6 +99,23 @@ Because it may be cause security risk, refer:
 If you want to access redis with no password, use `password: null`.
 
 See [ioredis API Documentation](https://github.com/luin/ioredis/blob/master/API.md#new_Redis) for all available options.
+
+### Customize `ioredis` version
+
+`egg-redis` using ioredis@3 now, if you want to upgrade your ioredis, you can pass the instance by `config.redis.Redis`:
+
+```js
+// config/config.default.js
+config.redis = {
+  Redis: require('ioredis'), // customize ioredis version, only set when you needed
+  client: {
+    port: 6379,          // Redis port
+    host: '127.0.0.1',   // Redis host
+    password: 'auth',
+    db: 0,
+  },
+}
+```
 
 ## Usage
 

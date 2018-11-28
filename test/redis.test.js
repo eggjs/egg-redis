@@ -41,4 +41,23 @@ describe('test/redis.test.js', () => {
         .expect('bar');
     });
   });
+
+  describe('single client with customize ioredis', () => {
+    let app;
+    before(async () => {
+      app = mm.app({
+        baseDir: 'apps/redisapp-customize',
+      });
+      await app.ready();
+    });
+    after(() => app.close());
+    afterEach(mm.restore);
+
+    it('should query', () => {
+      return request(app.callback())
+        .get('/')
+        .expect(200)
+        .expect('bar');
+    });
+  });
 });
