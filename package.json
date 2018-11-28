@@ -45,7 +45,7 @@
   },
   "ci": {
     "type": "travis",
-    "version": "8, 9",
+    "version": "8, 10, 11",
     "license": true,
     "services": "redis-server"
   },
