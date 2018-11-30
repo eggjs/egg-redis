@@ -22,6 +22,7 @@
     "ioredis": "^3.2.2"
   },
   "devDependencies": {
+    "@types/ioredis": "^4.0.4",
     "autod": "^3.0.1",
     "egg": "^2.3.0",
     "egg-bin": "^4.4.0",
