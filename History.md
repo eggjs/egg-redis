@@ -1,4 +1,10 @@
 
+2.2.0 / 2018-12-04
+==================
+
+**features**
+  * [[`f062dd5`](http://github.com/eggjs/egg-redis/commit/f062dd571ce17f569a65066a95f600e64b3d15c2)] - feat: support typescript (#23) (耐小心 <<qiqizjl@qq.com>>)
+
 2.1.0 / 2018-11-28
 ==================
 
