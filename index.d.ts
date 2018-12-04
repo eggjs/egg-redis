@@ -10,7 +10,7 @@ interface EggRedisOptions {
   default?: object;
   app?: boolean;
   agent?: boolean;
-  client?: ClusterOptions;
+  client?: RedisOptions | ClusterOptions;
   clients?: Record<string, RedisOptions>;
 }
 
