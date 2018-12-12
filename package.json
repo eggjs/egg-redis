@@ -21,10 +21,10 @@
     "database"
   ],
   "dependencies": {
-    "ioredis": "^3.2.2"
+    "ioredis": "^3.2.2",
+    "@types/ioredis": "^4.0.1"
   },
   "devDependencies": {
-    "@types/ioredis": "^4.0.1",
     "@types/node": "^10.9.4",
     "typescript": "^3.0.3",
     "autod": "^3.0.1",
