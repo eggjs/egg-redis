@@ -79,6 +79,22 @@ config.redis = {
 }
 ```
 
+**Sentinel**
+
+```javascript
+config.redis = {
+  client: {
+    sentinels: [{          // Sentinel instances
+      port: 26379,         // Sentinel port  
+      host: '127.0.0.1',   // Sentinel host  
+    }],
+    name: 'mymaster',      // Master name
+    password: 'auth',
+    db: 0
+  },
+}
+```
+
 **No password**
 
 Redis support no authentication access, but we are highly recommand you to use redis `requirepass` in `redis.conf`.
