@@ -1,4 +1,10 @@
 
+2.3.0 / 2018-12-18
+==================
+
+  * feat: redis sentinel config support (#26)
+  * deps: add @types/ioredis to deps (#25)
+
 2.2.0 / 2018-12-04
 ==================
 
