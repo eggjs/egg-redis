@@ -1,4 +1,5 @@
 import {Controller} from 'egg';
+import { Redis } from 'ioredis';
 
 declare module 'egg' {
     interface IController {
@@ -9,7 +10,8 @@ declare module 'egg' {
   export default class HomeController extends Controller {
     async index() {
         const { ctx,app } = this;
-        await app.redis.set('foo', 'bar');
-        ctx.body = await app.redis.get('foo'); 
+        const redis = app.redis as Redis
+        await redis.set('foo', 'bar');
+        ctx.body = await redis.get('foo'); 
     }
 }
