@@ -16,7 +16,7 @@ interface EggRedisOptions {
 
 declare module 'egg' {
   interface Application {
-    redis: Redis;
+    redis: Redis | Map<string, Redis>;
   }
 
   interface EggAppConfig {
