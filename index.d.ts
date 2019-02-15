@@ -14,9 +14,13 @@ interface EggRedisOptions {
   clients?: Record<string, RedisOptions>;
 }
 
+declare class Singleton<T> {
+  get(key: string): T;
+}
+
 declare module 'egg' {
   interface Application {
-    redis: Redis | Map<string, Redis>;
+    redis: Redis | Singleton<Redis>;
   }
 
   interface EggAppConfig {
