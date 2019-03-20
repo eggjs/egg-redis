@@ -22,8 +22,4 @@ declare module 'egg' {
   interface EggAppConfig {
     redis: EggRedisOptions;
   }
-
-  class Singleton<T> {
-    get(key: string): T;
-  }
 }
