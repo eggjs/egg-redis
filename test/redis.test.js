@@ -87,6 +87,29 @@ describe('test/redis.test.js', () => {
     });
   });
 
+  describe('multi client for ts', () => {
+    let app;
+    before(async () => {
+      // Add new dynamic compiler to compile from ts to js
+      const destPath = path.resolve('./test/fixtures/apps/ts-multi');
+      const compilerPath = path.resolve('./node_modules/typescript/bin/tsc');
+      compile.execSync(`node ${compilerPath} -p ${destPath}`);
+      app = mm.app({
+        baseDir: 'apps/ts-multi/redisapp-ts',
+      });
+      await app.ready();
+    });
+    after(() => app.close());
+    afterEach(mm.restore);
+
+    it('should query', () => {
+      return request(app.callback())
+        .get('/')
+        .expect(200)
+        .expect('bar');
+    });
+  });
+
   describe('redis sentinel', () => {
     let app;
     before(async () => {
