@@ -1,4 +1,10 @@
 
+2.3.1 / 2019-04-10
+==================
+
+**fixes**
+  * [[`3b0fa5a`](http://github.com/eggjs/egg-redis/commit/3b0fa5a536517f722e94a304a7eb9e0e530a6328)] - fix(types): add multi client support for typescript (#27) (mars <<marshalys@gmail.com>>)
+
 2.3.0 / 2018-12-18
 ==================
 
