@@ -128,4 +128,23 @@ describe('test/redis.test.js', () => {
         .expect('bar');
     });
   });
+
+  describe('skip health check', () => {
+    let app;
+    before(async () => {
+      app = mm.app({
+        baseDir: 'apps/redisapp-skipHealthCheck-true',
+      });
+      await app.ready();
+    });
+    after(() => app.close());
+    afterEach(mm.restore);
+
+    it('should query', () => {
+      return request(app.callback())
+        .get('/')
+        .expect(200)
+        .expect('bar');
+    });
+  });
 });
