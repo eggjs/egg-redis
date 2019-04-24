@@ -1,4 +1,10 @@
 
+2.3.2 / 2019-04-24
+==================
+
+**fixes**
+  * [[`ce7e40e`](http://github.com/eggjs/egg-redis/commit/ce7e40eaae3f635654aaa101493e6cf4a921c6cc)] - fix: should listen redis ready event before app start (#29) (killa <<killa123@126.com>>)
+
 2.3.1 / 2019-04-10
 ==================
 
