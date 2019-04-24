@@ -21,20 +21,21 @@
     "database"
   ],
   "dependencies": {
-    "ioredis": "^3.2.2",
-    "@types/ioredis": "^4.0.1"
+    "@types/ioredis": "^4.0.10",
+    "await-first": "^1.0.0",
+    "ioredis": "^4.9.0"
   },
   "devDependencies": {
     "@types/node": "^10.9.4",
-    "typescript": "^3.0.3",
-    "autod": "^3.0.1",
-    "egg": "^2.3.0",
-    "egg-bin": "^4.4.0",
-    "egg-ci": "^1.8.0",
-    "egg-mock": "^3.14.0",
-    "eslint": "^4.18.1",
-    "eslint-config-egg": "^7.0.0",
-    "supertest": "^3.0.0",
+    "autod": "^3.1.0",
+    "egg": "^2.21.1",
+    "egg-bin": "^4.13.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.22.2",
+    "eslint": "^5.16.0",
+    "eslint-config-egg": "^7.3.1",
+    "supertest": "^4.0.2",
+    "typescript": "^3.4.5",
     "utility": "^1.9.0"
   },
   "engines": {

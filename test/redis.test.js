@@ -128,4 +128,23 @@ describe('test/redis.test.js', () => {
         .expect('bar');
     });
   });
+
+  describe('await ready event', () => {
+    let app;
+    before(async () => {
+      app = mm.app({
+        baseDir: 'apps/redisapp-disable-offline-queue',
+      });
+      await app.ready();
+    });
+    after(() => app.close());
+    afterEach(mm.restore);
+
+    it('should query', () => {
+      return request(app.callback())
+        .get('/')
+        .expect(200)
+        .expect('bar');
+    });
+  });
 });
