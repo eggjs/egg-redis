@@ -15,8 +15,12 @@ module.exports = {
     'eslint',
     'eslint-config-egg',
     'supertest',
+    'typescript',
+  ],
+  dep: [
+    '@types/ioredis'
   ],
   exclude: [
     './test/fixtures',
   ],
-}
+};
