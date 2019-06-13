@@ -1,4 +1,13 @@
 
+2.4.0 / 2019-06-13
+==================
+
+**features**
+  * [[`5fbd718`](http://github.com/eggjs/egg-redis/commit/5fbd718c60e4c82a94f34a96583ed877d8e4fa5f)] - feat: add config.client.weakDependent (#30) (Yiyu He <<dead_horse@qq.com>>)
+
+**others**
+  * [[`b307f52`](http://github.com/eggjs/egg-redis/commit/b307f52ff8d9b67769b57498bb39fa835916d472)] - chore: test on node@12 (dead-horse <<dead_horse@qq.com>>)
+
 2.3.2 / 2019-04-24
 ==================
 
