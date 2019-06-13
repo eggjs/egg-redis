@@ -118,7 +118,7 @@ See [ioredis API Documentation](https://github.com/luin/ioredis/blob/master/API.
 
 ### Customize `ioredis` version
 
-`egg-redis` using ioredis@3 now, if you want to upgrade your ioredis, you can pass the instance by `config.redis.Redis`:
+`egg-redis` using ioredis@4 now, if you want to use other version of ioredis, you can pass the instance by `config.redis.Redis`:
 
 ```js
 // config/config.default.js
