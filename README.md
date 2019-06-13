@@ -85,8 +85,8 @@ config.redis = {
 config.redis = {
   client: {
     sentinels: [{          // Sentinel instances
-      port: 26379,         // Sentinel port  
-      host: '127.0.0.1',   // Sentinel host  
+      port: 26379,         // Sentinel port
+      host: '127.0.0.1',   // Sentinel host
     }],
     name: 'mymaster',      // Master name
     password: 'auth',
@@ -129,6 +129,20 @@ config.redis = {
     host: '127.0.0.1',   // Redis host
     password: 'auth',
     db: 0,
+  },
+}
+```
+
+**weakDependent**
+
+```javascript
+config.redis = {
+  client: {
+    port: 6379,          // Redis port
+    host: '127.0.0.1',   // Redis host
+    password: 'auth',
+    db: 0,
+    weakDependent: true, // this redis instance won't block app start
   },
 }
 ```

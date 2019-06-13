@@ -25,6 +25,25 @@ describe('test/redis.test.js', () => {
     });
   });
 
+  describe('weak dependent', () => {
+    let app;
+    before(async () => {
+      app = mm.app({
+        baseDir: 'apps/redisapp-weakdependent',
+      });
+      await app.ready();
+    });
+    after(() => app.close());
+    afterEach(mm.restore);
+
+    it('should query', () => {
+      return request(app.callback())
+        .get('/')
+        .expect(200)
+        .expect('bar');
+    });
+  });
+
   describe('single client supportTimeCommand = false', () => {
     let app;
     before(async () => {
