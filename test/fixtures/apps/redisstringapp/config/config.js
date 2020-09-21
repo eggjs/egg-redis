@@ -1,7 +1,7 @@
 'use strict';
 
 exports.redis = {
-  client: '/tmp/echo.sock',
+  client: '/tmp/redis.sock',
   agent: true
 };
 

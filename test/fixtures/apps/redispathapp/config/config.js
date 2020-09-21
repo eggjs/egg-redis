@@ -2,7 +2,7 @@
 
 exports.redis = {
   client: {
-    path: '/tmp/echo.sock'
+    path: '/tmp/redis.sock'
   },
   agent: true
 };
