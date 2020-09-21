@@ -185,23 +185,4 @@ describe('test/redis.test.js', () => {
         .expect('bar');
     });
   });
-
-  describe('redis "string" connection', () => {
-    let app;
-    before(async () => {
-      app = mm.app({
-        baseDir: 'apps/redisstringapp',
-      });
-      await app.ready();
-    });
-    after(() => app.close());
-    afterEach(mm.restore);
-
-    it('should query', () => {
-      return request(app.callback())
-        .get('/')
-        .expect(200)
-        .expect('bar');
-    });
-  });
 });
