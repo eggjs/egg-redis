@@ -16,4 +16,3 @@ after_script:
   - npminstall codecov && codecov
 services:
   - redis-server
-cache: bundler
