@@ -166,4 +166,23 @@ describe('test/redis.test.js', () => {
         .expect('bar');
     });
   });
+
+  describe('redis path', () => {
+    let app;
+    before(async () => {
+      app = mm.app({
+        baseDir: 'apps/redispathapp',
+      });
+      await app.ready();
+    });
+    after(() => app.close());
+    afterEach(mm.restore);
+
+    it('should query', () => {
+      return request(app.callback())
+        .get('/')
+        .expect(200)
+        .expect('bar');
+    });
+  });
 });

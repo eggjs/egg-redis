@@ -10,9 +10,11 @@ before_script:
   - cp test/fixtures/redis/*.conf /tmp
   - redis-server /tmp/sentinel-26379.conf --sentinel
   - redis-server /tmp/sentinel-26380.conf --sentinel
+  - redis-server /tmp/redispath-26381.conf
 script:
   - npm run ci
 after_script:
   - npminstall codecov && codecov
 services:
   - redis-server
+cache: false
