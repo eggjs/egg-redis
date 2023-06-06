@@ -1,4 +1,13 @@
 
+2.5.0 / 2023-06-06
+==================
+
+**features**
+  * [[`3088929`](http://github.com/eggjs/egg-redis/commit/3088929586dbf4127a9846767ef247e6c663d883)] - feat: support redis path mode (#33) (QingDeng <<zrl412@163.com>>)
+
+**others**
+  * [[`83d5404`](http://github.com/eggjs/egg-redis/commit/83d54044eff260fc3d704a394c410469f4e8b89e)] - docs: fix default redis version (dead-horse <<dead_horse@qq.com>>)
+
 2.4.0 / 2019-06-13
 ==================
 
