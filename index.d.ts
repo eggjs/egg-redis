@@ -11,7 +11,7 @@ interface EggRedisOptions {
   app?: boolean;
   agent?: boolean;
   client?: ClusterOptions;
-  clients?: Record<string, RedisOptions>;
+  clients?: Record<string, RedisOptions | ClusterOptions>;
 }
 
 declare module 'egg' {
