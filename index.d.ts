@@ -12,6 +12,7 @@ interface EggRedisOptions {
   agent?: boolean;
   client?: ClusterOptions;
   clients?: Record<string, RedisOptions>;
+  supportTimeCommand?: boolean;
 }
 
 declare module 'egg' {
