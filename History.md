@@ -1,4 +1,10 @@
 
+2.6.0 / 2024-04-07
+==================
+
+**features**
+  * [[`9f02a13`](http://github.com/eggjs/egg-redis/commit/9f02a13bca2a50f7b618d8987604cc6e34c2d646)] - feat: remove node password and db validate on cluster mode (#39) (KenyeeCheung <<kenyeecheung@icloud.com>>)
+
 2.5.0 / 2023-06-06
 ==================
 
