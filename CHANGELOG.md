@@ -1,3 +1,11 @@
+# Changelog
+
+## [2.6.1](https://github.com/eggjs/redis/compare/v2.6.0...v2.6.1) (2025-01-19)
+
+
+### Bug Fixes
+
+* typings of config for multi cluster clients ([#32](https://github.com/eggjs/redis/issues/32)) ([511c75c](https://github.com/eggjs/redis/commit/511c75c78a3d1ba990ef050dd70f9e87dcae6312))
 
 2.6.0 / 2024-04-07
 ==================
