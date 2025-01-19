@@ -30,11 +30,12 @@
     "autod": "^3.1.0",
     "egg": "^2.21.1",
     "egg-bin": "^6.13.0",
-    "egg-mock": "^3.22.2",
+    "egg-mock": "^5.15.1",
     "eslint": "^5.16.0",
     "eslint-config-egg": "^7.3.1",
     "supertest": "^4.0.2",
     "typescript": "^5.7.3",
+    "urllib": "^4.6.11",
     "utility": "^1.9.0"
   },
   "engines": {
