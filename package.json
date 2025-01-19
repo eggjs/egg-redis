@@ -46,23 +46,16 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
-    "autod": "autod"
-  },
-  "ci": {
-    "type": "travis",
-    "version": "8, 10, 11",
-    "license": true,
-    "services": "redis-server"
+    "ci": "npm run lint && npm run cov"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-redis.git"
+    "url": "git+https://github.com/eggjs/redis.git"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-redis#readme",
+  "homepage": "https://github.com/eggjs/redis#readme",
   "author": "jtyjty99999",
   "license": "MIT"
 }

@@ -1,31 +1,29 @@
 # egg-redis
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
+[![Node.js CI](https://github.com/eggjs/redis/actions/workflows/nodejs.yml/badge.svg)](https://github.com/eggjs/redis/actions/workflows/nodejs.yml)
 [![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
+[![Node.js Version](https://img.shields.io/node/v/egg-redis.svg?style=flat)](https://nodejs.org/en/download/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/eggjs/redis)
 
 [npm-image]: https://img.shields.io/npm/v/egg-redis.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-redis
-[travis-image]: https://img.shields.io/travis/eggjs/egg-redis.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-redis
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-redis.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-redis?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-redis.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-redis
+[codecov-image]: https://codecov.io/gh/eggjs/redis/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/eggjs/redis
 [snyk-image]: https://snyk.io/test/npm/egg-redis/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-redis
 [download-image]: https://img.shields.io/npm/dm/egg-redis.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-redis
 
-Redis client(support redis portocal) based on ioredis for egg framework
+Redis client(support redis protocol) based on ioredis for egg framework
 
 ## Install
 
 ```bash
-$ npm i egg-redis --save
+npm i egg-redis --save
 ```
 
 redis Plugin for egg, support egg application access to redis.
@@ -97,20 +95,18 @@ config.redis = {
 
 **No password**
 
-Redis support no authentication access, but we are highly recommand you to use redis `requirepass` in `redis.conf`.
+Redis support no authentication access, but we are highly recommend you to use redis `requirepass` in `redis.conf`.
 
 ```bash
-
 $vim /etc/redis/redis.conf
 
 requirepass xxxxxxxxxx  // xxxxxxxxxx is your password
-
 ```
 
 Because it may be cause security risk, refer:
 
-- https://ruby-china.org/topics/28094
-- https://zhuoroger.github.io/2016/07/29/redis-sec/
+- <https://ruby-china.org/topics/28094>
+- <https://zhuoroger.github.io/2016/07/29/redis-sec/>
 
 If you want to access redis with no password, use `password: null`.
 
@@ -187,7 +183,6 @@ module.exports = app => {
 };
 ```
 
-
 ### Clients Depend on Redis Cluster
 
 Before you start to use Redis Cluster, please checkout the [document](https://redis.io/topics/cluster-tutorial) first, especially confirm `cluster-enabled yes` in Redis Cluster configuration file.
@@ -232,7 +227,6 @@ module.exports = app => {
 };
 ```
 
-
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/eggjs/egg/issues).
@@ -240,3 +234,9 @@ Please open an issue [here](https://github.com/eggjs/egg/issues).
 ## License
 
 [MIT](LICENSE)
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=eggjs/redis)](https://github.com/eggjs/redis/graphs/contributors)
+
+Made with [contributors-img](https://contrib.rocks).
