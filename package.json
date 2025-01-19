@@ -26,16 +26,15 @@
     "ioredis": "^4.9.0"
   },
   "devDependencies": {
-    "@types/node": "^10.9.4",
+    "@types/node": "^22.10.7",
     "autod": "^3.1.0",
     "egg": "^2.21.1",
-    "egg-bin": "^4.13.0",
-    "egg-ci": "^1.11.0",
+    "egg-bin": "^6.13.0",
     "egg-mock": "^3.22.2",
     "eslint": "^5.16.0",
     "eslint-config-egg": "^7.3.1",
     "supertest": "^4.0.2",
-    "typescript": "^3.4.5",
+    "typescript": "^5.7.3",
     "utility": "^1.9.0"
   },
   "engines": {
@@ -43,8 +42,8 @@
   },
   "scripts": {
     "test": "npm run lint -- --fix && npm run test-local",
-    "test-local": "egg-bin test",
-    "cov": "egg-bin cov",
+    "test-local": "egg-bin test --ts false",
+    "cov": "egg-bin cov --ts false",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov"
   },
