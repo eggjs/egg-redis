@@ -1,13 +1,10 @@
-'use strict';
-
-const mm = require('egg-mock');
-const request = require('supertest');
-const path = require('path');
-const compile = require('child_process');
+import compile from 'node:child_process';
+import path from 'node:path';
+import { mm, MockApplication } from '@eggjs/mock';
 
 describe('test/redis.test.js', () => {
   describe('single client', () => {
-    let app;
+    let app: MockApplication;
     before(async () => {
       app = mm.app({
         baseDir: 'apps/redisapp',
@@ -18,7 +15,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');
@@ -26,7 +23,7 @@ describe('test/redis.test.js', () => {
   });
 
   describe('weak dependent', () => {
-    let app;
+    let app: MockApplication;
     before(async () => {
       app = mm.app({
         baseDir: 'apps/redisapp-weakdependent',
@@ -37,7 +34,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');
@@ -45,7 +42,7 @@ describe('test/redis.test.js', () => {
   });
 
   describe('single client supportTimeCommand = false', () => {
-    let app;
+    let app: MockApplication;
     before(async () => {
       app = mm.app({
         baseDir: 'apps/redisapp-supportTimeCommand-false',
@@ -56,7 +53,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');
@@ -64,7 +61,7 @@ describe('test/redis.test.js', () => {
   });
 
   describe('single client with customize ioredis', () => {
-    let app;
+    let app: MockApplication;
     before(async () => {
       app = mm.app({
         baseDir: 'apps/redisapp-customize',
@@ -75,31 +72,37 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');
     });
   });
 
-
   describe('single client for ts', () => {
-    let app;
+    let app: MockApplication;
+    const destPath = path.resolve('./test/fixtures/apps/ts/redisapp-ts');
+    const compilerPath = path.resolve('./node_modules/typescript/bin/tsc');
+
     before(async () => {
       // Add new dynamic compiler to compile from ts to js
-      const destPath = path.resolve('./test/fixtures/apps/ts');
-      const compilerPath = path.resolve('./node_modules/typescript/bin/tsc');
-      compile.execSync(`node ${compilerPath} -p ${destPath}`);
+      compile.execSync(`node ${compilerPath} -p ${destPath}`, {
+        cwd: destPath,
+        stdio: 'inherit',
+      });
       app = mm.app({
         baseDir: 'apps/ts/redisapp-ts',
       });
       await app.ready();
     });
-    after(() => app.close());
-    afterEach(mm.restore);
+    after(async () => {
+      // cleanup
+      compile.execSync(`node ${compilerPath} --build --clean`);
+      await app?.close();
+    });
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');
@@ -107,22 +110,25 @@ describe('test/redis.test.js', () => {
   });
 
   describe('multi client for ts', () => {
-    let app;
+    let app: MockApplication;
+    const destPath = path.resolve('./test/fixtures/apps/ts-multi');
+    const compilerPath = path.resolve('./node_modules/typescript/bin/tsc');
     before(async () => {
       // Add new dynamic compiler to compile from ts to js
-      const destPath = path.resolve('./test/fixtures/apps/ts-multi');
-      const compilerPath = path.resolve('./node_modules/typescript/bin/tsc');
       compile.execSync(`node ${compilerPath} -p ${destPath}`);
       app = mm.app({
         baseDir: 'apps/ts-multi/redisapp-ts',
       });
       await app.ready();
     });
-    after(() => app.close());
-    afterEach(mm.restore);
+    after(async () => {
+      // cleanup
+      compile.execSync(`node ${compilerPath} --build --clean`);
+      await app?.close();
+    });
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');
@@ -131,7 +137,7 @@ describe('test/redis.test.js', () => {
 
   // TODO: make github action support sentinel
   describe.skip('redis sentinel', () => {
-    let app;
+    let app: MockApplication;
     before(async () => {
       app = mm.app({
         baseDir: 'apps/redissentinelapp',
@@ -142,7 +148,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');
@@ -150,7 +156,7 @@ describe('test/redis.test.js', () => {
   });
 
   describe('await ready event', () => {
-    let app;
+    let app: MockApplication;
     before(async () => {
       app = mm.app({
         baseDir: 'apps/redisapp-disable-offline-queue',
@@ -161,7 +167,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');
@@ -170,7 +176,7 @@ describe('test/redis.test.js', () => {
 
   // TODO: make github action support redis start with path
   describe.skip('redis path', () => {
-    let app;
+    let app: MockApplication;
     before(async () => {
       app = mm.app({
         baseDir: 'apps/redispathapp',
@@ -181,7 +187,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return request(app.callback())
+      return app.httpRequest()
         .get('/')
         .expect(200)
         .expect('bar');

@@ -1,0 +1,259 @@
+{
+  "keys": "/Users/fengmk2/git/github.com/eggjs/redis/example/hello/config/config.default.ts",
+  "session": {
+    "key": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "maxAge": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "autoCommit": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "overwrite": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "httpOnly": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "signed": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "rolling": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "renew": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "encode": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "decode": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "logValue": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+    "protocolWhiteList": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+    "defaultMiddleware": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "type": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "ignoreJSON": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "cookieName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "sessionName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "headerName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "bodyName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "queryName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "rotateWhenInvalid": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "useSession": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "supportedRequests": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "refererWhiteList": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "cookieOptions": {
+        "signed": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+        "httpOnly": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+        "overwrite": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+      }
+    },
+    "xframe": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "value": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.local.js",
+      "maxAge": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "includeSubdomains": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "value": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "policy": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+      "value": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+    },
+    "ssrf": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+jsonp@3.0.0/node_modules/@eggjs/jsonp/dist/esm/config/config.default.js",
+    "callback": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+jsonp@3.0.0/node_modules/@eggjs/jsonp/dist/esm/config/config.default.js",
+    "csrf": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+jsonp@3.0.0/node_modules/@eggjs/jsonp/dist/esm/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-onerror@2.4.0/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-onerror@2.4.0/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-onerror@2.4.0/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js",
+    "dirs": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js",
+    "queryField": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js",
+    "cookieField": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js",
+    "cookieDomain": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js",
+    "cookieMaxAge": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js",
+    "localeAlias": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js",
+    "writeCookie": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+watcher@4.0.4/node_modules/@eggjs/watcher/dist/esm/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+watcher@4.0.4/node_modules/@eggjs/watcher/dist/esm/config/config.default.js",
+      "development": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+watcher@4.0.4/node_modules/@eggjs/watcher/dist/esm/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+schedule@5.0.2/node_modules/@eggjs/schedule/dist/esm/config/config.default.js",
+      "file": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+schedule@5.0.2/node_modules/@eggjs/schedule/dist/esm/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+schedule@5.0.2/node_modules/@eggjs/schedule/dist/esm/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "defaultParamCharset": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/config/config.default.js",
+    "ignoreDirs": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/config/config.default.js",
+    "fastReady": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/config/config.default.js",
+    "reloadOnDebug": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/config/config.default.js",
+    "overrideDefault": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/config/config.default.js",
+    "overrideIgnore": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+static@3.0.0/node_modules/@eggjs/static/dist/esm/config/config.default.js",
+    "dir": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+static@3.0.0/node_modules/@eggjs/static/dist/esm/config/config.default.js",
+    "dynamic": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+static@3.0.0/node_modules/@eggjs/static/dist/esm/config/config.default.js",
+    "preload": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+static@3.0.0/node_modules/@eggjs/static/dist/esm/config/config.default.js",
+    "buffer": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+static@3.0.0/node_modules/@eggjs/static/dist/esm/config/config.default.js",
+    "maxFiles": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+static@3.0.0/node_modules/@eggjs/static/dist/esm/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-view@2.1.4/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-view@2.1.4/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-view@2.1.4/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-view@2.1.4/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-view@2.1.4/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "name": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "cookies": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "proxy": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "maxIpsCount": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "maxProxyCount": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "protocolHeaders": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "ipHeaders": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "hostHeaders": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "pkg": {
+    "name": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "type": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+  },
+  "baseDir": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "HOME": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "rundir": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "timing": {
+      "slowBootActionMinDuration": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+    }
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "notFound": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "sitefile": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "middlewares": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "httpClient": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+  },
+  "notfound": {
+    "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "pageUrl": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+  },
+  "siteFile": {
+    "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "/favicon.ico": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "cacheControl": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "encoding": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "formLimit": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "jsonLimit": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "textLimit": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "strict": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+      "depth": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+      "parameterLimit": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+    },
+    "onProtoPoisoning": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "onerror": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "encoding": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "env": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "level": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "consoleLevel": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "outputJSON": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "buffer": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "appLogName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "coreLogName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "agentLogName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "errorLogName": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "enableFastContextLogger": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+  },
+  "httpclient": {
+    "request": {
+      "timeout": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "logging": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "workerStartTimeout": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "serverTimeout": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+      "port": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+      "hostname": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "responseTimeout": "/Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js"
+  }
+}

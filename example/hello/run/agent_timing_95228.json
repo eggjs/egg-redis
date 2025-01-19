@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Process Start",
+    "start": 1737425752469,
+    "pid": 95228,
+    "index": 0,
+    "end": 1737425752941,
+    "duration": 472
+  },
+  {
+    "name": "agent Start",
+    "start": 1737425752941,
+    "pid": 95228,
+    "index": 1,
+    "end": 1737425753707,
+    "duration": 766
+  },
+  {
+    "name": "Before Start in load files",
+    "start": 1737425752944,
+    "pid": 95228,
+    "index": 2,
+    "end": 1737425753697,
+    "duration": 753
+  },
+  {
+    "name": "Load Plugin",
+    "start": 1737425752944,
+    "pid": 95228,
+    "index": 3,
+    "end": 1737425753611,
+    "duration": 667
+  },
+  {
+    "name": "Load Config",
+    "start": 1737425753611,
+    "pid": 95228,
+    "index": 4,
+    "end": 1737425753630,
+    "duration": 19
+  },
+  {
+    "name": "Require(0) config/config.default.ts",
+    "start": 1737425753611,
+    "pid": 95228,
+    "index": 5,
+    "end": 1737425753612,
+    "duration": 1
+  },
+  {
+    "name": "Require(1) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+session@4.0.0/node_modules/@eggjs/session/dist/esm/config/config.default.js",
+    "start": 1737425753613,
+    "pid": 95228,
+    "index": 6,
+    "end": 1737425753613,
+    "duration": 0
+  },
+  {
+    "name": "Require(2) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.default.js",
+    "start": 1737425753613,
+    "pid": 95228,
+    "index": 7,
+    "end": 1737425753616,
+    "duration": 3
+  },
+  {
+    "name": "Require(3) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+jsonp@3.0.0/node_modules/@eggjs/jsonp/dist/esm/config/config.default.js",
+    "start": 1737425753616,
+    "pid": 95228,
+    "index": 8,
+    "end": 1737425753617,
+    "duration": 1
+  },
+  {
+    "name": "Require(4) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-onerror@2.4.0/node_modules/egg-onerror/config/config.default.js",
+    "start": 1737425753617,
+    "pid": 95228,
+    "index": 9,
+    "end": 1737425753617,
+    "duration": 0
+  },
+  {
+    "name": "Require(5) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/config/config.default.js",
+    "start": 1737425753617,
+    "pid": 95228,
+    "index": 10,
+    "end": 1737425753618,
+    "duration": 1
+  },
+  {
+    "name": "Require(6) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+watcher@4.0.4/node_modules/@eggjs/watcher/dist/esm/config/config.default.js",
+    "start": 1737425753618,
+    "pid": 95228,
+    "index": 11,
+    "end": 1737425753619,
+    "duration": 1
+  },
+  {
+    "name": "Require(7) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+schedule@5.0.2/node_modules/@eggjs/schedule/dist/esm/config/config.default.js",
+    "start": 1737425753619,
+    "pid": 95228,
+    "index": 12,
+    "end": 1737425753619,
+    "duration": 0
+  },
+  {
+    "name": "Require(8) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/config/config.default.js",
+    "start": 1737425753619,
+    "pid": 95228,
+    "index": 13,
+    "end": 1737425753620,
+    "duration": 1
+  },
+  {
+    "name": "Require(9) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/config/config.default.js",
+    "start": 1737425753620,
+    "pid": 95228,
+    "index": 14,
+    "end": 1737425753620,
+    "duration": 0
+  },
+  {
+    "name": "Require(10) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/config/config.default.js",
+    "start": 1737425753621,
+    "pid": 95228,
+    "index": 15,
+    "end": 1737425753621,
+    "duration": 0
+  },
+  {
+    "name": "Require(11) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+static@3.0.0/node_modules/@eggjs/static/dist/esm/config/config.default.js",
+    "start": 1737425753621,
+    "pid": 95228,
+    "index": 16,
+    "end": 1737425753622,
+    "duration": 1
+  },
+  {
+    "name": "Require(12) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-view@2.1.4/node_modules/egg-view/config/config.default.js",
+    "start": 1737425753622,
+    "pid": 95228,
+    "index": 17,
+    "end": 1737425753622,
+    "duration": 0
+  },
+  {
+    "name": "Require(13) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.default.js",
+    "start": 1737425753623,
+    "pid": 95228,
+    "index": 18,
+    "end": 1737425753624,
+    "duration": 1
+  },
+  {
+    "name": "Require(14) config/config.default.ts",
+    "start": 1737425753625,
+    "pid": 95228,
+    "index": 19,
+    "end": 1737425753625,
+    "duration": 0
+  },
+  {
+    "name": "Require(15) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/config/config.local.js",
+    "start": 1737425753625,
+    "pid": 95228,
+    "index": 20,
+    "end": 1737425753626,
+    "duration": 1
+  },
+  {
+    "name": "Require(16) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+watcher@4.0.4/node_modules/@eggjs/watcher/dist/esm/config/config.local.js",
+    "start": 1737425753627,
+    "pid": 95228,
+    "index": 21,
+    "end": 1737425753627,
+    "duration": 0
+  },
+  {
+    "name": "Require(17) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-view@2.1.4/node_modules/egg-view/config/config.local.js",
+    "start": 1737425753629,
+    "pid": 95228,
+    "index": 22,
+    "end": 1737425753629,
+    "duration": 0
+  },
+  {
+    "name": "Require(18) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/config/config.local.js",
+    "start": 1737425753629,
+    "pid": 95228,
+    "index": 23,
+    "end": 1737425753630,
+    "duration": 1
+  },
+  {
+    "name": "Load extend/agent.js",
+    "start": 1737425753630,
+    "pid": 95228,
+    "index": 24,
+    "end": 1737425753658,
+    "duration": 28
+  },
+  {
+    "name": "Require(19) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/app/extend/agent.js",
+    "start": 1737425753630,
+    "pid": 95228,
+    "index": 25,
+    "end": 1737425753638,
+    "duration": 8
+  },
+  {
+    "name": "Require(20) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+schedule@5.0.2/node_modules/@eggjs/schedule/dist/esm/app/extend/agent.js",
+    "start": 1737425753642,
+    "pid": 95228,
+    "index": 26,
+    "end": 1737425753649,
+    "duration": 7
+  },
+  {
+    "name": "Require(21) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/app/extend/agent.js",
+    "start": 1737425753650,
+    "pid": 95228,
+    "index": 27,
+    "end": 1737425753654,
+    "duration": 4
+  },
+  {
+    "name": "Load extend/context.js",
+    "start": 1737425753658,
+    "pid": 95228,
+    "index": 28,
+    "end": 1737425753678,
+    "duration": 20
+  },
+  {
+    "name": "Require(22) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/app/extend/context.js",
+    "start": 1737425753658,
+    "pid": 95228,
+    "index": 29,
+    "end": 1737425753658,
+    "duration": 0
+  },
+  {
+    "name": "Require(23) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+jsonp@3.0.0/node_modules/@eggjs/jsonp/dist/esm/app/extend/context.js",
+    "start": 1737425753658,
+    "pid": 95228,
+    "index": 30,
+    "end": 1737425753660,
+    "duration": 2
+  },
+  {
+    "name": "Require(24) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+i18n@3.0.1/node_modules/@eggjs/i18n/dist/esm/app/extend/context.js",
+    "start": 1737425753660,
+    "pid": 95228,
+    "index": 31,
+    "end": 1737425753663,
+    "duration": 3
+  },
+  {
+    "name": "Require(25) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-multipart@3.4.0/node_modules/egg-multipart/app/extend/context.js",
+    "start": 1737425753664,
+    "pid": 95228,
+    "index": 32,
+    "end": 1737425753668,
+    "duration": 4
+  },
+  {
+    "name": "Require(26) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-view@2.1.4/node_modules/egg-view/app/extend/context.js",
+    "start": 1737425753669,
+    "pid": 95228,
+    "index": 33,
+    "end": 1737425753671,
+    "duration": 2
+  },
+  {
+    "name": "Require(27) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/app/extend/context.js",
+    "start": 1737425753671,
+    "pid": 95228,
+    "index": 34,
+    "end": 1737425753671,
+    "duration": 0
+  },
+  {
+    "name": "Load agent.js",
+    "start": 1737425753678,
+    "pid": 95228,
+    "index": 35,
+    "end": 1737425753692,
+    "duration": 14
+  },
+  {
+    "name": "Require(28) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+security@4.0.0/node_modules/@eggjs/security/dist/esm/agent.js",
+    "start": 1737425753678,
+    "pid": 95228,
+    "index": 36,
+    "end": 1737425753679,
+    "duration": 1
+  },
+  {
+    "name": "Require(29) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-onerror@2.4.0/node_modules/egg-onerror/agent.js",
+    "start": 1737425753680,
+    "pid": 95228,
+    "index": 37,
+    "end": 1737425753682,
+    "duration": 2
+  },
+  {
+    "name": "Require(30) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+watcher@4.0.4/node_modules/@eggjs/watcher/dist/esm/agent.js",
+    "start": 1737425753682,
+    "pid": 95228,
+    "index": 38,
+    "end": 1737425753683,
+    "duration": 1
+  },
+  {
+    "name": "Require(31) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+schedule@5.0.2/node_modules/@eggjs/schedule/dist/esm/agent.js",
+    "start": 1737425753683,
+    "pid": 95228,
+    "index": 39,
+    "end": 1737425753684,
+    "duration": 1
+  },
+  {
+    "name": "Require(32) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/agent.js",
+    "start": 1737425753685,
+    "pid": 95228,
+    "index": 40,
+    "end": 1737425753688,
+    "duration": 3
+  },
+  {
+    "name": "Require(33) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg-logrotator@3.2.0/node_modules/egg-logrotator/agent.js",
+    "start": 1737425753688,
+    "pid": 95228,
+    "index": 41,
+    "end": 1737425753688,
+    "duration": 0
+  },
+  {
+    "name": "Require(34) /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/egg@4.0.3/node_modules/egg/dist/esm/agent.js",
+    "start": 1737425753689,
+    "pid": 95228,
+    "index": 42,
+    "end": 1737425753690,
+    "duration": 1
+  },
+  {
+    "name": "Did Load in /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+watcher@4.0.4/node_modules/@eggjs/watcher/dist/esm/agent.js:didLoad",
+    "start": 1737425753697,
+    "pid": 95228,
+    "index": 43,
+    "end": 1737425753699,
+    "duration": 2
+  },
+  {
+    "name": "Did Load in /Users/fengmk2/git/github.com/eggjs/redis/node_modules/.store/@eggjs+development@4.0.0/node_modules/@eggjs/development/dist/esm/agent.js:didLoad",
+    "start": 1737425753697,
+    "pid": 95228,
+    "index": 44,
+    "end": 1737425753706,
+    "duration": 9
+  }
+]
