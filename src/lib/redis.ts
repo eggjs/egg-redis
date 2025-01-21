@@ -41,15 +41,17 @@ function createClient(options: RedisClusterOptions | RedisClientOptions, app: Eg
         `[@eggjs/redis] 'host: ${sentinel.host}', 'port: ${sentinel.port}' are required on config`);
     });
 
+    const mask = config.password ? '***' : config.password;
     assert(config.name && config.password !== undefined && config.db !== undefined,
-      `[@eggjs/redis] 'name of master: ${config.name}', 'password: ${config.password}', 'db: ${config.db}' are required on config`);
+      `[@eggjs/redis] 'name of master: ${config.name}', 'password: ${mask}', 'db: ${config.db}' are required on config`);
 
     app.coreLogger.info('[@eggjs/redis] sentinel connecting start');
     client = new RedisClass(config as any);
   } else {
     const config = options as RedisClientOptions;
+    const mask = config.password ? '***' : config.password;
     assert((config.host && config.port && config.password !== undefined && config.db !== undefined) || config.path,
-      `[@eggjs/redis] 'host: ${config.host}', 'port: ${config.port}', 'password: ${config.password}', 'db: ${config.db}' or 'path:${config.path}' are required on config`);
+      `[@eggjs/redis] 'host: ${config.host}', 'port: ${config.port}', 'password: ${mask}', 'db: ${config.db}' or 'path:${config.path}' are required on config`);
     if (config.host) {
       app.coreLogger.info('[@eggjs/redis] server connecting redis://:***@%s:%s/%s',
         config.host, config.port, config.db);

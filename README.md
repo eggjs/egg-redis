@@ -23,7 +23,7 @@ Valkey / Redis client (support [redis protocol](https://redis.io/docs/latest/dev
 ## Install
 
 ```bash
-npm i egg-redis
+npm i @eggjs/redis
 ```
 
 Valkey / Redis Plugin for egg, support egg application access to Valkey / Redis Service.
