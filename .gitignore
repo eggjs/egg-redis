@@ -10,3 +10,4 @@ dist
 package-lock.json
 .package-lock.json
 test/fixtures/**/*.d.ts
+run/
