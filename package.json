@@ -1,53 +1,26 @@
 {
-  "name": "egg-redis",
+  "name": "@eggjs/redis",
   "version": "2.6.1",
-  "description": "Redis plugin for egg",
-  "eggPlugin": {
-    "name": "redis"
+  "publishConfig": {
+    "access": "public"
   },
-  "files": [
-    "index.d.ts",
-    "app.js",
-    "agent.js",
-    "lib",
-    "config"
-  ],
-  "types": "./index.d.ts",
+  "description": "Valkey / Redis plugin for egg",
+  "eggPlugin": {
+    "name": "redis",
+    "exports": {
+      "import": "./dist/esm",
+      "require": "./dist/commonjs",
+      "typescript": "./src"
+    }
+  },
   "keywords": [
     "egg",
     "eggPlugin",
     "egg-plugin",
     "redis",
+    "Valkey",
     "database"
   ],
-  "dependencies": {
-    "@types/ioredis": "^4.0.10",
-    "await-first": "^1.0.0",
-    "ioredis": "^4.9.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.10.7",
-    "autod": "^3.1.0",
-    "egg": "^3.30.1",
-    "egg-bin": "^6.13.0",
-    "egg-mock": "^5.15.1",
-    "eslint": "^5.16.0",
-    "eslint-config-egg": "^7.3.1",
-    "supertest": "^4.0.2",
-    "typescript": "^5.7.3",
-    "urllib": "^4.6.11",
-    "utility": "^1.9.0"
-  },
-  "engines": {
-    "node": ">=6.0.0"
-  },
-  "scripts": {
-    "test": "npm run lint -- --fix && npm run test-local",
-    "test-local": "egg-bin test --ts false",
-    "cov": "egg-bin cov --ts false",
-    "lint": "eslint .",
-    "ci": "npm run lint && npm run cov"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eggjs/redis.git"
@@ -57,5 +30,65 @@
   },
   "homepage": "https://github.com/eggjs/redis#readme",
   "author": "jtyjty99999",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">= 18.19.0"
+  },
+  "dependencies": {
+    "@eggjs/core": "^6.3.0",
+    "ioredis": "^5.4.2"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.1",
+    "@eggjs/bin": "7",
+    "@eggjs/mock": "^6.0.5",
+    "@eggjs/tsconfig": "1",
+    "@types/mocha": "10",
+    "@types/node": "22",
+    "egg": "^4.0.3",
+    "eslint": "8",
+    "eslint-config-egg": "14",
+    "rimraf": "6",
+    "snap-shot-it": "^7.9.10",
+    "tshy": "3",
+    "tshy-after": "1",
+    "typescript": "5"
+  },
+  "scripts": {
+    "lint": "eslint --cache src test --ext .ts",
+    "pretest": "npm run clean && npm run lint -- --fix",
+    "test": "egg-bin test",
+    "preci": "npm run clean &&  npm run lint",
+    "ci": "egg-bin cov",
+    "postci": "npm run prepublishOnly && npm run clean",
+    "clean": "rimraf dist",
+    "prepublishOnly": "tshy && tshy-after && attw --pack"
+  },
+  "type": "module",
+  "tshy": {
+    "exports": {
+      ".": "./src/index.ts",
+      "./package.json": "./package.json"
+    }
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/index.d.ts",
+        "default": "./dist/commonjs/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "./dist/commonjs/index.d.ts",
+  "main": "./dist/commonjs/index.js",
+  "module": "./dist/esm/index.js"
 }

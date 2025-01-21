@@ -2,8 +2,12 @@ logs/
 npm-debug.log
 node_modules/
 coverage/
-.idea/
-run/
+test/fixtures/**/run
 .DS_Store
-*.swp
-.nyc_output/
+.tshy*
+.eslintcache
+dist
+package-lock.json
+.package-lock.json
+test/fixtures/**/*.d.ts
+run/

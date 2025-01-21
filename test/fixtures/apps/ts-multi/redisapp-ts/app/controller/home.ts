@@ -1,17 +1,23 @@
-import {Controller, Singleton} from 'egg';
+import { Controller, Singleton } from 'egg';
 import { Redis } from 'ioredis';
 
 declare module 'egg' {
-    interface IController {
-      home: HomeController;
-    }
+  interface IController {
+    home: HomeController;
   }
-  
-  export default class HomeController extends Controller {
-    async index() {
-        const { ctx,app } = this;
-        const redis = (app.redis as Singleton<Redis>).get('cache');
-        await redis.set('foo', 'bar');
-        ctx.body = await redis.get('foo'); 
-    }
+
+  interface EggApplicationCore {
+    redis: Redis & Singleton<Redis>;
+  }
+}
+
+export default class HomeController extends Controller {
+  async index() {
+    const { ctx,app } = this;
+    const redis = app.redis.get('cache') as unknown as Redis;
+    await redis.set('foo', 'bar');
+    const redis2 = app.redis.getSingletonInstance('cache');
+    await redis2.set('foo2', 'bar2');
+    ctx.body = await redis.get('foo');
+  }
 }

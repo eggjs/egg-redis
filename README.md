@@ -1,34 +1,35 @@
-# egg-redis
+# @eggjs/redis
 
 [![NPM version][npm-image]][npm-url]
 [![Node.js CI](https://github.com/eggjs/redis/actions/workflows/nodejs.yml/badge.svg)](https://github.com/eggjs/redis/actions/workflows/nodejs.yml)
 [![Test coverage][codecov-image]][codecov-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
-[![Node.js Version](https://img.shields.io/node/v/egg-redis.svg?style=flat)](https://nodejs.org/en/download/)
+[![Node.js Version](https://img.shields.io/node/v/@eggjs/redis.svg?style=flat)](https://nodejs.org/en/download/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/eggjs/redis)
 
-[npm-image]: https://img.shields.io/npm/v/egg-redis.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-redis
+[npm-image]: https://img.shields.io/npm/v/@eggjs/redis.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@eggjs/redis
 [codecov-image]: https://codecov.io/gh/eggjs/redis/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/eggjs/redis
-[snyk-image]: https://snyk.io/test/npm/egg-redis/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-redis
-[download-image]: https://img.shields.io/npm/dm/egg-redis.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-redis
+[snyk-image]: https://snyk.io/test/npm/@eggjs/redis/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/@eggjs/redis
+[download-image]: https://img.shields.io/npm/dm/@eggjs/redis.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@eggjs/redis
 
-Redis client(support redis protocol) based on ioredis for egg framework
+Valkey / Redis client (support [redis protocol](https://redis.io/docs/latest/develop/reference/protocol-spec/)) based on iovalkey for egg framework
 
 ## Install
 
 ```bash
-npm i egg-redis --save
+npm i @eggjs/redis
 ```
 
-redis Plugin for egg, support egg application access to redis.
+Valkey / Redis Plugin for egg, support egg application access to Valkey / Redis Service.
 
-This plugin based on [ioredis](https://github.com/luin/ioredis), if you want to know specific usage, you should refer to the document of [ioredis](https://github.com/luin/ioredis).
+This plugin based on [ioredis](https://github.com/redis/ioredis).
+If you want to know specific usage, you should refer to the document of [ioredis](https://github.com/redis/ioredis).
 
 ## Configuration
 
@@ -37,7 +38,7 @@ Change `${app_root}/config/plugin.js` to enable redis plugin:
 ```js
 exports.redis = {
   enable: true,
-  package: 'egg-redis',
+  package: '@eggjs/redis',
 };
 ```
 
@@ -82,10 +83,14 @@ config.redis = {
 ```javascript
 config.redis = {
   client: {
-    sentinels: [{          // Sentinel instances
-      port: 26379,         // Sentinel port
-      host: '127.0.0.1',   // Sentinel host
-    }],
+    // Sentinel instances
+    sentinels: [
+      {
+        port: 26379,         // Sentinel port
+        host: '127.0.0.1',   // Sentinel host
+      },
+      // other sentinel instance config
+    ],
     name: 'mymaster',      // Master name
     password: 'auth',
     db: 0
@@ -110,11 +115,12 @@ Because it may be cause security risk, refer:
 
 If you want to access redis with no password, use `password: null`.
 
-See [ioredis API Documentation](https://github.com/luin/ioredis/blob/master/API.md#new_Redis) for all available options.
+See [ioredis API Documentation](https://github.com/redis/ioredis#basic-usage) for all available options.
 
 ### Customize `ioredis` version
 
-`egg-redis` using ioredis@4 now, if you want to use other version of ioredis, you can pass the instance by `config.redis.Redis`:
+`@eggjs/redis` using `ioredis@5` now, if you want to use other version of iovalkey or ioredis,
+you can pass the instance by `config.redis.Redis`:
 
 ```js
 // config/config.default.js
@@ -138,14 +144,14 @@ config.redis = {
     host: '127.0.0.1',   // Redis host
     password: 'auth',
     db: 0,
-    weakDependent: true, // this redis instance won't block app start
+    weakDependent: true, // the redis instance won't block app start
   },
 }
 ```
 
 ## Usage
 
-In controller, you can use `app.redis` to get the redis instance, check [ioredis](https://github.com/luin/ioredis#basic-usage) to see how to use.
+In controller, you can use `app.redis` to get the redis instance, check [ioredis](https://github.com/redis/ioredis#basic-usage) to see how to use.
 
 ```js
 // app/controller/home.js
@@ -190,30 +196,30 @@ Before you start to use Redis Cluster, please checkout the [document](https://re
 In controller, you also can use `app.redis` to get the redis instance based on Redis Cluster.
 
 ```js
-
 // app/config/config.default.js
-
 exports.redis = {
-   client: {
-     cluster: true,
-     nodes: [{
-       host: '127.0.0.1',
-       port: '6379',
-       family: 'user',
-       password: 'password',
-       db: 'db',
-     }, {
-       host: '127.0.0.1',
-       port: '6380',
-       family: 'user',
-       password: 'password',
-       db: 'db',
-     }]
-   },
+  client: {
+    cluster: true,
+    nodes: [
+      {
+        host: '127.0.0.1',
+        port: '6379',
+        family: 'user',
+        password: 'password',
+        db: 'db',
+      },
+      {
+        host: '127.0.0.1',
+        port: '6380',
+        family: 'user',
+        password: 'password',
+        db: 'db',
+      },
+    ],
+  },
 };
 
 // app/controller/home.js
-
 module.exports = app => {
   return class HomeController extends app.Controller {
     async index() {
