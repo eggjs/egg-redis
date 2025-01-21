@@ -1,8 +1,32 @@
 import compile from 'node:child_process';
 import path from 'node:path';
 import { mm, MockApplication } from '@eggjs/mock';
+import snapshot from 'snap-shot-it';
 
 describe('test/redis.test.js', () => {
+  describe('default config', () => {
+    let app: MockApplication;
+    before(async () => {
+      app = mm.app({
+        baseDir: 'apps/redisapp-default',
+      });
+      await app.ready();
+    });
+    after(() => app.close());
+    afterEach(mm.restore);
+
+    it('should make default config stable', () => {
+      snapshot(app.config.redis);
+    });
+
+    it('should query', () => {
+      return app.httpRequest()
+        .get('/')
+        .expect(200)
+        .expect('bar');
+    });
+  });
+
   describe('single client', () => {
     let app: MockApplication;
     before(async () => {

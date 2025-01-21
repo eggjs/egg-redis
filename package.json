@@ -49,6 +49,7 @@
     "eslint": "8",
     "eslint-config-egg": "14",
     "rimraf": "6",
+    "snap-shot-it": "^7.9.10",
     "tshy": "3",
     "tshy-after": "1",
     "typescript": "5"
