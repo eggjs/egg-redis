@@ -1,5 +1,48 @@
 # Changelog
 
+## [3.0.0](https://github.com/eggjs/redis/compare/v2.6.1...v3.0.0) (2025-01-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Node.js < 18.19.0 support
+
+part of https://github.com/eggjs/egg/issues/3644
+
+https://github.com/eggjs/egg/issues/5257
+
+<!-- This is an auto-generated comment: release notes by coderabbit.ai
+-->
+
+## Summary by CodeRabbit
+
+Here are the release notes for this update:
+
+- **New Features**
+	- Updated Redis plugin to support Valkey and Redis
+	- Added support for Node.js 18.19.0 and newer versions
+	- Enhanced TypeScript configuration and type definitions
+
+- **Breaking Changes**
+	- Renamed package from `egg-redis` to `@eggjs/redis`
+	- Migrated from generator functions to async/await syntax
+	- Updated minimum Node.js version requirement to 18.19.0
+
+- **Improvements**
+	- Improved Redis client configuration options
+	- Enhanced module compatibility with ES modules
+	- Updated dependencies and plugin configuration
+
+- **Bug Fixes**
+	- Refined Redis connection and initialization process
+	- Improved error handling and logging for Redis connections
+
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->
+
+### Features
+
+* support cjs and esm both by tshy ([#44](https://github.com/eggjs/redis/issues/44)) ([ceadd9d](https://github.com/eggjs/redis/commit/ceadd9ded3b31a41dac730846b537fbefd4d7687))
+
 ## [2.6.1](https://github.com/eggjs/redis/compare/v2.6.0...v2.6.1) (2025-01-19)
 
 
