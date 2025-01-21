@@ -11,8 +11,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-redis.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-redis
-[codecov-image]: https://codecov.io/gh/eggjs/redis/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/eggjs/redis
+[codecov-image]: https://codecov.io/gh/eggjs/redis/branch/2.x/graph/badge.svg
+[codecov-url]: https://app.codecov.io/gh/eggjs/redis/tree/2.x
 [snyk-image]: https://snyk.io/test/npm/egg-redis/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-redis
 [download-image]: https://img.shields.io/npm/dm/egg-redis.svg?style=flat-square

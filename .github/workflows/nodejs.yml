@@ -1,10 +1,10 @@
-name: CI
+name: CI for 2.x
 
 on:
   push:
-    branches: [ master ]
+    branches: [ 2.x ]
   pull_request:
-    branches: [ master ]
+    branches: [ 2.x ]
 
 jobs:
   Job:
